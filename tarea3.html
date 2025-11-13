@@ -1,0 +1,179 @@
+ <!DOCTYPE html>
+ <html lang="es">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Registro de Estudiantes - Cursos de Extensión</title>
+     <link rel="stylesheet" href="tarea3.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+ </head>
+ <body>
+     <div class="contenedor">
+         <div class="encabezado">
+             <h1 class="animate__animated animate__rubberBand">Universidad Autónoma de la Ciudad de México</h1>
+    
+             <h1 class="animate__animated animate__bounce">📚 Registo de uacemitas</h1>
+             <p>Cursos, seminarios o talleres de capacitación 2026</p>
+         </div>
+ 
+         <form class="contenido-formulario">
+             <!-- Datos Personales -->
+             <div class="seccion">
+                 <h2 class="titulo-seccion">
+                     <span class="icono-seccion">👤</span>
+                     Datos Personales
+                 </h2>
+ 
+                 <div class="campo-formulario">
+                     <label for="nombreCompleto">Nombre Completo<span class="requerido">*</span></label>
+                     <input type="text" required placeholder="Ej: Juan Pérez García">
+                 </div>
+ 
+                 <div class="campo-formulario">
+                     <label for="email">Correo Electrónico<span class="requerido">*</span></label>
+                     <input type="email" required placeholder="nombre.apellido@estudiantxs.uacm.edu.mx">
+                     
+                 </div>
+ 
+                 <div class="campo-formulario">
+                     <label for="numeroTelefono">Número de Teléfono<span class="requerido">*</span></label>
+                     <input type="tel" required placeholder="+52 55 5123 4567">
+                 </div>
+ 
+                 <div class="campo-formulario">
+                     <label for="carrera">Carrera / Programa Académico<span class="requerido">*</span></label>
+                     <select id="carrera" name="carrera" required>
+                         <option value="">Selecciona tu Carrera</option>
+                         <option value="matematicas">Modelación Matemática</option>
+                         <option value="nutricion">Nutrición y Salud</option>
+                         <option value="salud">Promoción de la Salud</option>
+                         <option value="electronica">Ingeniería en Sistemas Electrónicos Industriales</option>
+                         <option value="politica">Ciencia Política y Administración Urbana</option>
+                         <option value="telecomunicaciones">Ingeniería en Sistemas Electrónicos y de Telecomunicaciones</option>
+                         <option value="software">Ingeniería de Software</option>
+                         <option value=""></option>
+                         
+                     </select>
+                 </div>
+             </div>
+ 
+             <!-- Selección de Cursos, seminario o taller -->
+             <div class="seccion">
+                 <h2 class="titulo-seccion">
+                     <span class="icono-seccion">🎓</span>
+                     Cursos, seminarios o talleres de capacitación 2026
+                 </h2>
+ 
+                 <p style="margin-bottom: 20px; color: #86628f;">
+                     Selecciona el curso, seminario o taller de tu interés:
+                 </p>
+ 
+                 <div class="contenedor-cursos">
+                     <div class="curso-opcion idiomas">
+                         <input type="checkbox" id="idiomas">
+                         <label for="idiomas" class="curso-tarjeta">
+                             <span class="curso-icono">🌍</span>
+                             <span class="curso-nombre">Idiomas<br>(Inglés, Japonés, Alemán)</span>
+                             <span class="checkmark"><i class="fas fa-check"></i></span>
+                         </label>
+                     </div>
+ 
+                     <div class="curso-opcion programacion">
+                         <input type="checkbox" id="frontend">
+                         <label for="frontend" class="curso-tarjeta">
+                             <span class="curso-icono">💻</span>
+                             <span class="curso-nombre">Desarrollo Front-End</span>
+                             <span class="checkmark"><i class="fas fa-check"></i></span>
+                         </label>
+                     </div>
+ 
+                     <div class="curso-opcion salud">
+                         <input type="checkbox" id="salud">
+                         <label for="salud" class="curso-tarjeta">
+                             <span class="curso-icono">🏥</span>
+                             <span class="curso-nombre">Gestión y administración de servicios de salud</span>
+                             <span class="checkmark"><i class="fas fa-check"></i></span>
+                         </label>
+                     </div>
+ 
+                     <div class="curso-opcion marketing">
+                         <input type="checkbox" id="marketing">
+                         <label for="marketing" class="curso-tarjeta">
+                             <span class="curso-icono">🚀</span>
+                             <span class="curso-nombre">Marketing y ventas</span>
+                             <span class="checkmark"><i class="fas fa-check"></i></span>
+                         </label>
+                     </div>
+ 
+                     <div class="curso-opcion robotica">
+                         <input type="checkbox" id="robotica">
+                         <label for="robotica" class="curso-tarjeta">
+                             <span class="curso-icono">🤖</span>
+                             <span class="curso-nombre">Robótica orientada a la IA</span>
+                             <span class="checkmark"><i class="fas fa-check"></i></span>
+                         </label>
+                     </div>
+ 
+                     <div class="curso-opcion nutricion">
+                         <input type="checkbox" id="nutricion">
+                         <label for="nutricion" class="curso-tarjeta">
+                             <span class="curso-icono">📱</span>
+                             <span class="curso-nombre">Nutrición Humana y Dietética</span>
+                             <span class="checkmark"><i class="fas fa-check"></i></span>
+                         </label>
+                     </div>
+                 </div>
+             </div>
+ 
+             
+             <div class="seccion">
+                 <h2 class="titulo-seccion">
+                     <span class="icono-seccion">💬</span>
+                     Información Adicional
+                 </h2>
+ 
+                 <div class="campo-formulario">
+                     <label for="comentarios">Comentarios y/o sigerencias (Opcional)</label>
+                     <textarea id="comentarios" placeholder="Cuéntanos qué esperas aprender en estos cursos..."></textarea>
+                     
+                 </div>
+             </div>
+             <button type="submit" class="boton-enviar">✓ Enviar mi registro</button>
+         </form>
+     </div>
+ 
+ <footer>
+         <div class="footer-content">
+             <p>&copy; 2025 Magaly De la rosa Cervantes</p>
+             
+             <nav>
+                 <ul class="contact-list">
+                     <li>
+                         <a href="mailto:info@ejemplo.com">
+                             <i class="fas fa-envelope"></i> magaly.delarosa@estudiantxs.uacm.edu.mx
+                         </a>
+                     </li>
+                     <li>
+                         <a href="tel:+525512345678">
+                             <i class="fas fa-phone"></i> Llamar: 55 5123 4567 (falso)
+                         </a>
+                     </li>
+                     <li>
+                         <a href="https://wa.me/525512345678" target="_blank">
+                             <i class="fab fa-whatsapp"></i> WhatsApp 55 5152 3456 (falso)
+                         </a>
+                     </li>
+                     <li>
+                         <a href="https://www.linkedin.com/in/tuperfil" target="_blank">
+                             <i class="fab fa-linkedin"></i> Facebook: Magaly De la Rosa12 (falso)
+                         </a>
+                     </li>
+                 </ul>
+             </nav>
+         </div>
+     </footer>
+ 
+ </body>
+ </html>

@@ -1,0 +1,104 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-color: #ffe4e1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+ }
+ .container {
+  background-color: #fffafa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+ }
+ .text-shadow-pop-top {
+  font-size: 3em;
+  font-weight: bold;
+  color: #f44336;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  animation: rainbow 5s infinite, popTop 1s both;
+ }
+ @keyframes rainbow {
+  0% { color: #f44336; }
+  14% { color: #e91e63; }
+  28% { color: #9c27b0; }
+  42% { color: #3f51b5; }
+  57% { color: #03a9f4; }
+  71% { color: #009688; }
+  85% { color: #8bc34a; }
+  100% { color: #f44336; }
+ }
+ @keyframes popTop {
+  0% {
+  transform: translateY(0);
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+  100% {
+  transform: translateY(-10px);
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+ }
+ img {
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+  animation: pulse 2s infinite alternate;
+ }
+ @keyframes pulse {
+  0% {
+  transform: scale(1);
+  }
+  100% {
+  transform: scale(1.1);
+  }
+ }
+ div > p {
+  font-size: 1.2em;
+  color: #e91e63;
+  animation: fadeIn 2s forwards;
+ }
+ 
+
+ @keyframes fadeIn {
+  0% {
+  opacity: 0;
+  transform: translateY(20px);
+  }
+  100% {
+  opacity: 1;
+  transform: translateY(0);
+  }
+ }
+ .ingresar a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff69b4;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-size: 1.1em;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+ }
+ 
+ .ingresar a:hover {
+  background-color: #d87093; 
+ }
+ .tracking-in-expand {
+  animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+ }
+ @keyframes tracking-in-expand {
+  0% {
+  letter-spacing: -0.5em;
+  opacity: 0;
+  }
+  40% {
+  opacity: 0.6;
+  }
+  100% {
+  opacity: 1;
+  }
+ }
